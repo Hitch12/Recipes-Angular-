@@ -11,7 +11,7 @@
         <h2 class="fw-bolder">{{mealDetails.strMeal}}</h2>
         <h4>Instructions :</h4>
         <p class="fs-6 text-muted pb-">{{mealDetails.strInstructions.slice(0,250)}}</p>
-        <h5>Area : <span >{{mealDetails.strArea}}</span></h5>
+        <h5>Area : <span class="btn btn-success px-3 mx-2" [routerLink]="['/area-details',mealDetails.strArea]">{{mealDetails.strArea}}</span></h5>
         <h5>Category  : <span class="btn btn-success px-3 mx-2" [routerLink]="['/category-details',mealDetails.strCategory]">{{mealDetails.strCategory}}</span></h5>
         <h5>Recipes :</h5>
         <div class="d-flex flex-wrap " >

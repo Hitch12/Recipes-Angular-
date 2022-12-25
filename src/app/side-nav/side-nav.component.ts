@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RespsService } from '../resps.service';
 
 @Component({
   selector: 'app-side-nav',
@@ -8,8 +7,7 @@ import { RespsService } from '../resps.service';
 })
 export class SideNavComponent implements OnInit {
 
-  constructor(private _RespsService:RespsService) { }
-  term:string=this._RespsService.term;
+  constructor() { }
   ngOnInit(): void {
   }
 
