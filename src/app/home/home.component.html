@@ -1,0 +1,146 @@
+<div class="container">
+
+    <!-- For Beef -->
+    <div class="row py-5 g-4">
+        <div class="col-md-3 d-flex align-items-center">
+          <a [routerLink]="['/category-details','beef']" class="text-decoration-none text-white">
+            <div class="">
+              <hr>
+              <h3>Beef</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.?</p>
+              <hr>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3" *ngFor="let item of beefItemsCategory.slice(0,7)">
+            <div class="card position-relative overflow-hidden">
+                <img [src]="item.strMealThumb" class="card-img" alt="...">
+                <div class="card-body text-dark">
+                    <h5 class="card-title">{{item.strMeal}}</h5>
+                    <a [routerLink]="['/details', item.idMeal]" class="btn btn-primary">Show Recipes</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- For Chicken -->
+    <div class="row py-5 my-5 g-4 border-top border-1">
+
+        <div class="col-md-3 d-flex align-items-center">
+          <a [routerLink]="['/category-details','chicken']" class="text-decoration-none text-white">
+            <div class="">
+                <hr>
+                <h3>Chicken</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.?</p>
+                <hr>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3" *ngFor="let item of chickenItemsCategory.slice(0,7)">
+            <div class="card position-relative overflow-hidden">
+                <img [src]="item.strMealThumb" class="card-img" alt="...">
+                <div class="card-body text-dark">
+                    <h5 class="card-title">{{item.strMeal}}</h5>
+                    <a [routerLink]="['/details', item.idMeal]" class="btn btn-primary">Show Recipes</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- For Dessert -->
+    <div class="row py-5 my-5 g-4 border-top border-1">
+
+        <div class="col-md-3 d-flex align-items-center">
+          <a [routerLink]="['/category-details','dessert']" class="text-decoration-none text-white">
+            <div class="">
+                <hr>
+                <h3>Dessert</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.?</p>
+                <hr>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3" *ngFor="let item of dessertItemsCategory.slice(0,7)">
+            <div class="card position-relative overflow-hidden">
+                <img [src]="item.strMealThumb" class="card-img" alt="...">
+                <div class="card-body text-dark">
+                    <h5 class="card-title">{{item.strMeal}}</h5>
+                    <a [routerLink]="['/details', item.idMeal]" class="btn btn-primary">Show Recipes</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- For Pasta -->
+    <div class="row py-5 my-5 g-4 border-top border-1">
+        <div class="col-md-3 d-flex align-items-center">
+          <a [routerLink]="['/category-details','pasta']" class="text-decoration-none text-white">
+            <div class="">
+                <hr>
+                <h3>Pasta</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.?</p>
+                <hr>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3" *ngFor="let item of pastaItemsCategory.slice(0,7)">
+            <div class="card position-relative overflow-hidden">
+                <img [src]="item.strMealThumb" class="card-img" alt="...">
+                <div class="card-body text-dark">
+                    <h5 class="card-title">{{item.strMeal}}</h5>
+                    <a [routerLink]="['/details', item.idMeal]" class="btn btn-primary">Show Recipes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- For Seafood -->
+    <div class="row py-5 my-5 g-4 border-top border-1">
+        <div class="col-md-3 d-flex align-items-center">
+          <a [routerLink]="['/category-details','seafood']" class="text-decoration-none text-white">
+            <div class="">
+                <hr>
+                <h3>Seafood</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.?</p>
+                <hr>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3" *ngFor="let item of seafoodItemsCategory.slice(0,7)">
+            <div class="card position-relative overflow-hidden">
+                <img [src]="item.strMealThumb" class="card-img" alt="...">
+                <div class="card-body text-dark">
+                    <h5 class="card-title">{{item.strMeal}}</h5>
+                    <a [routerLink]="['/details', item.idMeal]" class="btn btn-primary">Show Recipes</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- For Vegan -->
+    <div class="row py-5 my-5 g-4 border-top border-1">
+        <div class="col-md-3 d-flex align-items-center">
+          <a [routerLink]="['/category-details','vegan']" class="text-decoration-none text-white">
+            <div class="">
+                <hr>
+                <h3>Vegan</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.?</p>
+                <hr>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3" *ngFor="let item of veganItemsCategory.slice(0,7)">
+            <div class="card position-relative overflow-hidden">
+                <img [src]="item.strMealThumb" class="card-img" alt="...">
+                <div class="card-body text-dark">
+                    <h5 class="card-title">{{item.strMeal}}</h5>
+                    <a [routerLink]="['/details', item.idMeal]" class="btn btn-primary">Show Recipes</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>

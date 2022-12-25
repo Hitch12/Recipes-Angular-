@@ -1,0 +1,15 @@
+<div class="container">
+
+  <div class="row py-5 g-4">
+    <div class="col-md-3" *ngFor="let item of ingredientsItems">
+        <div class="card position-relative overflow-hidden">
+            <img [src]="item.image" class="card-img" alt="...">
+            <div class="card-body text-dark">
+                <h5 class="card-title">{{item.strIngredient}}</h5>
+                <p class="">{{item.strDescription}}</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>

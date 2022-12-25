@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-body{
+  position: absolute;
+  background: rgba(255, 255, 255, 0.644);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+.card:hover .card-body{
+  opacity: 1;
+}
+.card:hover .card-title{
+  margin-bottom: 25px;
+  opacity:1;
+}
+.card-title{
+  margin-bottom: 55px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.w-3{
+  width: 3px;
+}
+

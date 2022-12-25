@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row py-5 g-4">
+    <div class="col-md-6 d-flex align-items-center">
+        <div class="">
+            <hr>
+            <h3>{{nameOfArea}}</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quas tempore eius rerum, molestias nam quisquam obcaecati itaque repudiandae ipsa voluptates, eum cumque unde similique nesciunt dignissimos eos optio. Temporibus.</p>
+            <hr>
+        </div>
+    </div>
+    <div class="col-md-3" *ngFor="let item of itemsArea">
+        <div class="card position-relative overflow-hidden">
+            <img [src]="item.strMealThumb" class="card-img" alt="...">
+            <div class="card-body text-dark">
+                <h5 class="card-title">{{item.strMeal}}</h5>
+                <a [routerLink]="['/details', item.idMeal]" class="btn btn-primary">Show Recipes</a>
+            </div>
+        </div>
+    </div>
+
+  </div>
+</div>

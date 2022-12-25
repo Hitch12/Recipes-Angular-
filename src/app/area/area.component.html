@@ -1,0 +1,13 @@
+<div class="container">
+
+  <div class="row py-5 g-4">
+    <div class="col-md-3" *ngFor="let item of areas">
+      <a [routerLink]="['/area-details',item.strArea]" class="text-decoration-none">
+        <div class="card position-relative overflow-hidden text-dark">
+            <h5 class="text-center my-4 fs-2">{{item.strArea}}</h5>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>

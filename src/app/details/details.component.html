@@ -1,0 +1,26 @@
+<div class="container w-100">
+  <div class="row d-flex my-2 align-items-center">
+    <div class="col-md-4">
+      <div class="img overflow-hidden rounded-4">
+        <img class="w-100"  [src]="mealDetails.strMealThumb" alt="">
+      </div>
+    </div>
+    <div class="col-md-8 d-flex ">
+      <div class="h-100 bg-light w-3 mx-2"></div>
+      <div class="ms-3">
+        <h2 class="fw-bolder">{{mealDetails.strMeal}}</h2>
+        <h4>Instructions :</h4>
+        <p class="fs-6 text-muted pb-">{{mealDetails.strInstructions.slice(0,250)}}</p>
+        <h5>Area : <span >{{mealDetails.strArea}}</span></h5>
+        <h5>Category  : <span class="btn btn-success px-3 mx-2" [routerLink]="['/category-details',mealDetails.strCategory]">{{mealDetails.strCategory}}</span></h5>
+        <h5>Recipes :</h5>
+        <div class="d-flex flex-wrap " >
+          <span class="alert alert-info m-1 px-1 py-0 " *ngFor="let item of Resps" >{{item}}</span>
+        </div>
+        <a [href]="mealDetails.strSource" target="_blank" class="btn btn-outline-primary m-3 px-3 fs-5 ms-0">Sores</a>
+        <a [href]="mealDetails.strYoutube" target="_blank" class="btn btn-danger m-3 px-3 fs-5">Youtube</a>
+
+      </div>
+    </div>
+  </div>
+</div>
